@@ -1,2 +1,7 @@
-cipher = raw_input("Please enter the text you would like deciphered\n: ")
-alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+string = raw_input('What text would you like encrypted? ').lower()
+shift = int(raw_input('How much should the shift on the cipher be? '))
+cipher = []
+for x in range(len(string)):
+    y = ord(string[x]) + shift
+    cipher.append(str(y))
+    
